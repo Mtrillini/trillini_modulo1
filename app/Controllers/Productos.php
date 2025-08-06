@@ -13,7 +13,7 @@ class Productos extends BaseController
         $resultados = $query->getResultArray();
 
         $data = [
-            'titulo' => 'Catálogo de productos',
+            'titulo' => 'Catálogo',
             'productos' => $resultados
         ];
 
@@ -35,4 +35,12 @@ class Productos extends BaseController
 
         return view('detalle', ['producto' => $producto]);
     }
+
+    public function contacto()
+    {
+        return view('contacto');
+    }
+
+
+
 }
